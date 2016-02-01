@@ -9,11 +9,13 @@ This tool is ideal for use without polluting you environment with dependencies. 
 wget
 ```bash
 wget https://github.com/tnozicka/goenvtemplator/releases/download/v0.0.1-rc1/goenvtemplator-amd64 -O /usr/local/bin/goenvtemplator
+chmod +x /usr/local/bin/goenvtemplator
 ```
 
 Dockerfile
 ```Dockerfile
 ADD https://github.com/tnozicka/goenvtemplator/releases/download/v0.0.1-rc1/goenvtemplator-amd64 /usr/local/bin/goenvtemplator
+RUN chmod +x /usr/local/bin/goenvtemplator
 ```
 
 
